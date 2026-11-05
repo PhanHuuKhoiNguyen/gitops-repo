@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../base
+
+images:
+  - name: phanhuukhoinguyen1205/repairshop-backend
+    newTag: 3.0.0
+  - name: phanhuukhoinguyen1205/repairshop-frontend
+    newTag: 3.0.0
