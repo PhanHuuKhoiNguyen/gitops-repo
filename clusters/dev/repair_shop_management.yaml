@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: repairshop
+  name: dev-repairshop
   namespace: argocd
 spec:
   project: default
