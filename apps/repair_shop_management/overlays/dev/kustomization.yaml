@@ -11,4 +11,4 @@ images:
     newTag: 3.0.0
 replicas:
   - name: repairshop-backend-deployment
-    count: 0
+    count: 1
