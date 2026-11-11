@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/PhanHuuKhoiNguyen/gitops-repo
     targetRevision: main
-    path: cluster
+    path: clusters
     directory:
       recurse: true
   destination:
