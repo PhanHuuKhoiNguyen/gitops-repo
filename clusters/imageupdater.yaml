@@ -1,0 +1,17 @@
+apiVersion: argocd-image-updater.argoproj.io/v1alpha1
+kind: ImageUpdater
+metadata:
+  name: repairshop-dev
+  namespace: argocd
+spec:
+  writeBackConfig:
+    method: git
+    gitConfig:
+      branch: main
+  applicationRefs:
+    - namePattern: "dev-repairshop"
+      images:
+        - alias: backend
+          imageName: phanhuukhoinguyen1205/repairshop-frontend
+          commonUpdateSettings:
+            updateStrategy: semver
