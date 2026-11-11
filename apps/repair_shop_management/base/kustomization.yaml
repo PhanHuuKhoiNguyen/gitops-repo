@@ -6,4 +6,3 @@ resources:
   - repairshop-configmap.yaml
   - repairshop-nodeport.yaml
   - repairshop-secret.yaml
-  - telemetry.yaml

@@ -1,9 +1,0 @@
-apiVersion: telemetry.istio.io/v1
-kind: Telemetry
-metadata:
-  name: access-log
-  namespace: microservice
-spec:
-  accessLogging:
-  - providers:
-    - name: envoy
