@@ -8,7 +8,7 @@ images:
   - name: phanhuukhoinguyen1205/repairshop-backend
     newTag: 3.0.0
   - name: phanhuukhoinguyen1205/repairshop-frontend
-    newTag: 5.0.4
+    newTag: 5.0.6
 replicas:
   - name: repairshop-backend-deployment
     count: 0
