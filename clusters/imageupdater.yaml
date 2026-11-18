@@ -12,7 +12,7 @@ spec:
   applicationRefs:
     - namePattern: "dev-repairshop"
       images:
-        - alias: backend
+        - alias: frontend
           imageName: phanhuukhoinguyen1205/repairshop-frontend
           commonUpdateSettings:
             updateStrategy: semver
