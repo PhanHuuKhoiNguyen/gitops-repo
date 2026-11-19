@@ -1,0 +1,29 @@
+configs:
+  cm:
+    kustomize.buildOptions: --enable-helm
+    statusbadge.enabled: "true"
+  params:
+    server.insecure: true
+    timeout.reconciliation: 180s
+controller:
+  resources:
+    limits:
+      memory: 1Gi
+    requests:
+      cpu: 250m
+      memory: 512Mi
+repoServer:
+  replicas: 2
+  resources:
+    limits:
+      memory: 512Mi
+    requests:
+      cpu: 100m
+      memory: 256Mi
+server:
+  ingress:
+    enabled: true
+    hostname: argocd.example.com
+    ingressClassName: nginx
+    tls: true
+  replicas: 2
